@@ -28,19 +28,20 @@ int main(void)
                 if (count != 1) {
                         continue;
                 }
-                
+
                 for (int j = i + 1; j < 40; j++) {
                         if (vetor[i] == vetor[j]) {
                                 count++;
                         }
                 }
-                
+
                 if ((count/2) > 1) {
                         printf("Número %2i: %2i pares\n", vetor[i], count/2);
                         continue;
                 }
-
-                printf("Número %2i: %2i par\n", vetor[i], count/2);
+                else if ((count/2) == 1) {
+                        printf("Número %2i: %2i par\n", vetor[i], count/2);
+                }
         }
 
         return 0;
