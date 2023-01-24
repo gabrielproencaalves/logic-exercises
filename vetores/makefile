@@ -1,4 +1,4 @@
-EXERCISES = 01 02 03 04
+EXERCISES = 01 02 03 04 05 06
 
 install:
 	for dir in $(EXERCISES); do \
