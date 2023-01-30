@@ -9,21 +9,21 @@
 
 int main(void)
 {
-    int x[20], y[20], z[20];
+    int i, x[20], y[20], z[20];
 
-    for (int i = 0; i < 20; i++) {
+    for (i = 0; i < 20; i++) {
         printf("x[%2i] = ", i);
         scanf("%i", &(x[i]));
     }
 
     putchar('\n');
 
-    for (int i = 0; i < 20; i++) {
+    for (i = 0; i < 20; i++) {
         printf("y[%2i] = ", i);
         scanf("%i", &(y[i]));
     }
 
-    for (int i = 0; i < 20; i++) {
+    for (i = 0; i < 20; i++) {
         if ((i % 2) == 0 )
             z[i] = x[i];
         else

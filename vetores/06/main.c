@@ -9,9 +9,9 @@
 
 int main(void)
 {
-        int vetor[40];
+        int i, vetor[40];
 
-        for (int i = 0; i < 40; i++) {
+        for (i = 0; i < 40; i++) {
                 int input;
                 printf("vetor[%2i] = ", i);
                 scanf("%i", &input);
@@ -21,7 +21,7 @@ int main(void)
                 vetor[i] = input;
         }
         puts("");
-        for(int i = 0; i < 40; i++) {
+        for(i = 0; i < 40; i++) {
                 printf("vetor[%2i] = %i\n", i, vetor[i]);
         }
 

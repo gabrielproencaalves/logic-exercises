@@ -8,9 +8,9 @@
 
 int main(void)
 {
-        int vetor[10];
+        int i, vetor[10];
 
-        for (int i = 0; i < 10; i++) {
+        for (i = 0; i < 10; i++) {
                 if (i == 0)
                         vetor[0] = 1;
                 else

@@ -10,9 +10,9 @@
 
 int main(void)
 {
-        int x, vetor[20];
+        int i, x, vetor[20];
 
-        for (int i = 0; i < 20; i++) {
+        for (i = 0; i < 20; i++) {
                 printf("vetor[%2i] = ", i);
                 scanf("%i", &(vetor[i]));
         }
@@ -20,7 +20,7 @@ int main(void)
         printf("X = ");
         scanf("%i", &x);
 
-        for (int i = 0; i < 20; i++) {
+        for (i = 0; i < 20; i++) {
                 if (vetor[i] == x) {
                     printf("Encontrado na %iª posição\n", i + 1);
                     return 0;

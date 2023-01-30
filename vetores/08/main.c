@@ -9,16 +9,16 @@
 
 int main(void)
 {
-    int vetor[40];
+    int i, vetor[40];
 
-    for (int i = 0; i < 40; i++) {
+    for (i = 0; i < 40; i++) {
         printf("vetor[%2i] = ", i);
         scanf("%i", &(vetor[i]));
     }
 
     printf("vetor[ 0] = %i\n", vetor[0]);
 
-    for (int i = 1; i < 40; i++) {
+    for (i = 1; i < 40; i++) {
         vetor[i] += vetor[i-1];
         printf("vetor[%2i] = %i", i, vetor[i]);
     }

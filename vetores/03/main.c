@@ -9,20 +9,20 @@
 
 int main(void)
 {
-        int vetor[16];
+        int i, vetor[16];
 
-        for (int i = 0; i < 16; i++) {
+        for (i = 0; i < 16; i++) {
                 printf("vetor[%i] = ", i);
                 scanf("%i", &(vetor[i]));
         }
 
-        for (int i = 0; i < 8; i++) {
+        for (i = 0; i < 8; i++) {
                 vetor[i]   = vetor[i] ^ vetor[i+8];
                 vetor[i+8] = vetor[i] ^ vetor[i+8];
                 vetor[i]   = vetor[i] ^ vetor[i+8];
         }
 
-        for (int i = 0; i < 16; i++)
+        for (i = 0; i < 16; i++)
             printf("vetor[%i] = %i\n", i, vetor[i]);
         return 0;
 }

@@ -9,17 +9,17 @@
 
 int main(void)
 {
-        int vetor[40];
+        int i, vetor[40];
 
-        for (int i = 0; i < 40; i++) {
+        for (i = 0; i < 40; i++) {
                 printf("vetor[%2i] = ", i);
                 scanf("%i", &(vetor[i]));
         }
 
-        for (int i = 0; i < 39; i++) {
-                int count = 1;
+        for (i = 0; i < 39; i++) {
+                int j, count = 1;
 
-                for (int j = 0; j < i; j++) {
+                for (j = 0; j < i; j++) {
                         if (vetor[j] == vetor[i]) {
                                 count++;
                         }
@@ -29,7 +29,7 @@ int main(void)
                         continue;
                 }
 
-                for (int j = i + 1; j < 40; j++) {
+                for (j = i + 1; j < 40; j++) {
                         if (vetor[i] == vetor[j]) {
                                 count++;
                         }

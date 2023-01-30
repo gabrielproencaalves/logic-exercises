@@ -10,9 +10,9 @@
 
 int main(void)
 {
-        int x, y, vetor[12];
+        int i, x, y, vetor[12];
 
-        for (int i = 0; i < 12; i++) {
+        for (i = 0; i < 12; i++) {
                 printf("vetor[%2i] = ", i);
                 scanf("%i", &(vetor[i]));
         }
